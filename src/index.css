@@ -1,0 +1,90 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 20% 99%;
+    --foreground: 260 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 10% 10%;
+
+    --primary: 270 76% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 77% 53%;
+    --secondary-foreground: 260 10% 10%;
+
+    --muted: 260 10% 96%;
+    --muted-foreground: 260 10% 40%;
+
+    --accent: 43 77% 53%;
+    --accent-foreground: 260 10% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 260 10% 90%;
+    --input: 260 10% 90%;
+    --ring: 270 76% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 260 10% 10%;
+    --foreground: 260 20% 96%;
+
+    --card: 260 10% 12%;
+    --card-foreground: 260 20% 96%;
+
+    --popover: 260 10% 12%;
+    --popover-foreground: 260 20% 96%;
+
+    --primary: 270 76% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 77% 53%;
+    --secondary-foreground: 260 10% 10%;
+
+    --muted: 260 10% 20%;
+    --muted-foreground: 260 20% 70%;
+
+    --accent: 43 77% 53%;
+    --accent-foreground: 260 10% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 260 20% 96%;
+
+    --border: 260 10% 20%;
+    --input: 260 10% 20%;
+    --ring: 270 76% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-r from-primary/80 to-salon-purple;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-salon-gold/80 to-salon-gold;
+  }
+}
